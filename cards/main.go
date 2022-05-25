@@ -7,8 +7,10 @@ func main() {
 
 	//fmt.Println(cards.toString())
 	//cards.saveToFile("myCards")
-	cards := deckFromFile("myCard")
+	cards := newDeck()
+	cards.shuffleCards()
 	cards.print()
+
 	//cards = append(cards, "Six of Spades")
 	//
 	//cards.print()
