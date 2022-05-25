@@ -1,14 +1,23 @@
 package main
 
 func main() {
-	cards := newDeck()
-	cards.print()
+	//cards := newDeck()
+	//cards.print()
+	//cards.print()
 
+	//fmt.Println(cards.toString())
+	//cards.saveToFile("myCards")
+	cards := deckFromFile("myCard")
+	cards.print()
 	//cards = append(cards, "Six of Spades")
 	//
 	//cards.print()
 	//
 	//fmt.Println(cards)
+
+	////trying string to byte conversion
+	//greeting := "Hi there!"
+	//fmt.Println([]byte(greeting))
 
 }
 
